@@ -92,9 +92,65 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Web.config" />
+    <Content Include="Admin\Admin.aspx" />
+    <Content Include="Admin\MaintainLobbyist.aspx" />
+    <Content Include="Admin\MimicLobbyist.aspx" />
+    <Content Include="Admin\RecordingTimeLobbyist.aspx" />
+    <Content Include="Admin\UnlockLobbyist.aspx" />
+    <Content Include="Images\Back_button.png" />
+    <Content Include="Images\Bottom2.png" />
+    <Content Include="Images\Bottom3.png" />
+    <Content Include="Images\Bottom3_Back.png" />
+    <Content Include="Images\chrome.png" />
+    <Content Include="Images\csv.png" />
+    <Content Include="Images\Excel.jpg" />
+    <Content Include="Images\EXIT.gif" />
+    <Content Include="Images\Home.png" />
+    <Content Include="Images\spacer.gif" />
+    <Content Include="Images\Top3.png" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Default.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\Admin.aspx.designer.vb">
+      <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin.aspx.vb">
+      <DependentUpon>Admin.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin\MaintainLobbyist.aspx.designer.vb">
+      <DependentUpon>MaintainLobbyist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\MaintainLobbyist.aspx.vb">
+      <DependentUpon>MaintainLobbyist.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin\MimicLobbyist.aspx.designer.vb">
+      <DependentUpon>MimicLobbyist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\MimicLobbyist.aspx.vb">
+      <DependentUpon>MimicLobbyist.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin\RecordingTimeLobbyist.aspx.designer.vb">
+      <DependentUpon>RecordingTimeLobbyist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\RecordingTimeLobbyist.aspx.vb">
+      <DependentUpon>RecordingTimeLobbyist.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UnlockLobbyist.aspx.designer.vb">
+      <DependentUpon>UnlockLobbyist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UnlockLobbyist.aspx.vb">
+      <DependentUpon>UnlockLobbyist.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="App_Data\CUSharedLocalClass.vb" />
+    <Compile Include="App_Data\LogonClass.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -113,6 +169,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -140,6 +203,9 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Advocate\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
